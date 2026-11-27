@@ -1,2 +1,2 @@
-# deadline-template
-# ReadMe
+## 使い方
+課題の締切までの残り日数を確認できます。
