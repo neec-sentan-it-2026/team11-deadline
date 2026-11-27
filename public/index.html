@@ -1,0 +1,24 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>締切カウンター</title>
+</head>
+<body>
+  <h1>締切カウンター</h1>
+  <ul id="list"></ul>
+  <script type="module">
+    import { daysUntil } from './deadline.js';
+    const deadlines = [
+      { name: '先端IT 振り返りシート', date: '2026-12-25' },
+    ];
+    const list = document.getElementById('list');
+    for (const d of deadlines) {
+      const li = document.createElement('li');
+      li.textContent = `${d.name}:あと ${daysUntil(d.date)} 日`;
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>
