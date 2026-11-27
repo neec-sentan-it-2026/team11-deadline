@@ -3,15 +3,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+<<<<<<< HEAD
   <title>締切カウンター</title>
   <style>
     h1{
       color:#0017c1;
     }
   </style>
+=======
+<title>11班の締切カウンター</title>
+>>>>>>> main
 </head>
 <body>
-  <h1>締切カウンター</h1>
+  <h1>11班の締切カウンター</h1>
   <ul id="list"></ul>
   <script type="module">
     import { daysUntil } from './deadline.js';
@@ -23,6 +27,7 @@
       const li = document.createElement('li');
       li.textContent = `${d.name}:あと ${daysUntil(d.date)} 日`;
       list.appendChild(li);
+
     }
   </script>
 </body>
